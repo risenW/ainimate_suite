@@ -1,0 +1,22 @@
+{
+    "name": "ainimate-workspace",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "workspaces": [
+        "ainimate-mcp-websocket",
+        "ainimate-mcp-server",
+        "ainimate"
+    ],
+    "scripts": {
+        "dev": "node scripts/dev.js",
+        "build": "yarn workspaces run build",
+        "websocket": "yarn workspace ainimate-mcp-websocket dev",
+        "mcp": "yarn workspace ainimate-mcp-server dev",
+        "app": "yarn workspace ainimate dev"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "wait-on": "^7.2.0"
+    }
+}
