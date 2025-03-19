@@ -1,0 +1,33 @@
+{
+  "name": "ainimate-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Ainimate app",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mcp",
+    "animation",
+    "ainimate"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "@types/socket.io-client": "^3.0.0",
+    "axios": "^1.6.7",
+    "socket.io-client": "^4.8.1",
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3"
+  }
+}
